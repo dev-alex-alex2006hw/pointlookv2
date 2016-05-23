@@ -1,20 +1,16 @@
-/**
- * PointLook App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
 } from 'react-native';
 
-import App from './app';
+import Main from './app/components/main';
 
-class PointLook extends Component {
+let App = React.createClass({
   render() {
-    return <App />;
+    return (
+      <Main />
+    );
   }
-}
+});
 
-AppRegistry.registerComponent('PointLook', () => PointLook);
+AppRegistry.registerComponent('Pointlook', () => App);
